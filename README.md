@@ -1,6 +1,4 @@
-cd "C:\Users\dines\Downloads\smart-ai-chatbot-v2"
 
-@"
 # 🤖 Smart AI Customer Support Chatbot
 
 A full-stack **AI-powered customer support chatbot** built with:
