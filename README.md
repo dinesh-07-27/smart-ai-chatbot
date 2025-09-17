@@ -1,64 +1,47 @@
 # 🤖 Smart AI Customer Support Chatbot
 
-A **full-stack AI-powered chatbot** for customer support using **FastAPI, React, and Llama2 (via Ollama)**.  
-It combines **RAG (Retrieval-Augmented Generation)** with a FAQ knowledge base to provide **context-aware, real-time responses**.
+A full-stack AI-powered customer support chatbot using **FastAPI**, **React**, and **Llama2 (via Ollama)**.  
+It uses **RAG (Retrieval-Augmented Generation)** with FAQ retrieval to give context-aware answers.
 
 ---
 
-## 🚀 Features
-- Natural conversation with **Llama2**  
-- **RAG-powered FAQ retrieval** (`faq.txt`)  
-- **FastAPI backend** with REST API  
-- **React frontend** with real-time chat UI  
-- **SQLite + ChromaDB** for chat history & vector search  
-- Easy to extend with more data sources  
+## 🚀 Key Features
+- Answers based on your FAQ set using RAG  
+- Natural responses via Llama2  
+- REST backend with FastAPI (`/chat` endpoint)  
+- React frontend UI for interactive chat  
+- SQLite + ChromaDB for storing knowledge and chat data  
 
 ---
 
-## 🛠️ Tech Stack
-- **Frontend**: React (JavaScript)  
+## 🛠 Tech Stack
 - **Backend**: FastAPI (Python)  
-- **Database**: SQLite + ChromaDB  
-- **AI Model**: Llama2 via [Ollama](https://ollama.ai)  
+- **Frontend**: React (JavaScript)  
+- **Knowledge store**: ChromaDB and `faq.txt`  
+- **Model**: Llama2 via Ollama  
+- **Database**: SQLite  
 
 ---
 
-## ⚡ Run Locally
+## ⚡ How to Run Locally
 
-### 1. Clone the repo
 ```bash
+# 1. Clone the repo
 git clone https://github.com/dinesh-07-27/smart-ai-chatbot.git
 cd smart-ai-chatbot
-2. Backend
-bash
-Copy code
+
+# 2. Backend
 cd backend
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 python ingest.py   # load FAQ into ChromaDB
 uvicorn main:app --reload --port 8000
-3. Frontend
-bash
-Copy code
+
+# 3. Frontend
 cd frontend
 npm install
 npm start
-4. Open App
-👉 http://localhost:3000
 
-📌 Future Improvements
-🌍 Multi-language support
-
-🎙️ Voice (STT + TTS) integration
-
-☁️ Cloud deployment (AWS/Render/Vercel)
-
-📊 Analytics dashboard for admins
-
-👤 Author
-K Dinesh Reddy
-🔗 LinkedIn • GitHub • LeetCode
-
-yaml
-Copy code
+# 4. Open in browser
+http://localhost:3000
