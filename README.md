@@ -50,12 +50,12 @@ http://localhost:3000
 ## Screenshots
 
 ### Chat UI
-![alt text](chat-ui.png)
+![Chat UI](screenshots/chat-ui.png)
 
 ### Bot Answering
-![alt text](bot-answering.png)
+![Bot Answering](screenshots/bot-answering.png)
 
 ### Backend Running
-![alt text](backend-running.png)
+![Backend Running](screenshots/backend-running.png)
 
 ---
