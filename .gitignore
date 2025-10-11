@@ -19,3 +19,4 @@ Thumbs.db
 # Others
 .env
 backend/chroma_db/ 
+backend/chroma_db/ 
