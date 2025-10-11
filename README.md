@@ -47,16 +47,15 @@ npm start
 # 4️⃣ Open in browser
 http://localhost:3000
 
-
 ## Screenshots
 
 ### Chat UI
-![Chat UI](https://raw.githubusercontent.com/dinesh-07-27/smart-ai-chatbot/main/screenshots/chat-ui.png)
+![alt text](chat-ui.png)
 
 ### Bot Answering
-![Bot Answering](https://raw.githubusercontent.com/dinesh-07-27/smart-ai-chatbot/main/screenshots/bot-answering.png)
+![alt text](bot-answering.png)
 
 ### Backend Running
-![Backend Running](https://raw.githubusercontent.com/dinesh-07-27/smart-ai-chatbot/main/screenshots/backend-running.png)
+![alt text](backend-running.png)
 
 ---
