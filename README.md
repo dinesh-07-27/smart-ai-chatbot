@@ -51,12 +51,12 @@ http://localhost:3000
 ## Screenshots
 
 ### Chat UI
-![Chat UI](screenshots/chat-ui.png)
+![Chat UI](https://github.com/dinesh-07-27/smart-ai-chatbot/blob/main/screenshots/chat-ui.png?raw=true)
 
 ### Bot Answering
-![Bot Answering](screenshots/bot-answering.png)
+![Bot Answering](https://github.com/dinesh-07-27/smart-ai-chatbot/blob/main/screenshots/bot-answering.png?raw=true)
 
 ### Backend Running
-![Backend Running](screenshots/backend-running.png)
+![Backend Running](https://github.com/dinesh-07-27/smart-ai-chatbot/blob/main/screenshots/backend-running.png?raw=true)
 
 ---
