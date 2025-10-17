@@ -3,6 +3,7 @@ import React, { useState } from "react";
 function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
+  const [sessionId, setSessionId] = useState(null); // <-- Added to store session_id
 
   const send = async () => {
     if (!input.trim()) return;
@@ -11,13 +12,30 @@ function App() {
     setInput("");
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/chat", {
+      // Build the backend URL
+      let url = "http://127.0.0.1:8000/chat";
+      if (sessionId) {
+        // Append session_id as query param if exists
+        url += `?session_id=${sessionId}`;
+      }
+
+      const res = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: user }),
       });
+
       const data = await res.json();
-      setMessages((m) => [...m, { sender: "You", text: user }, { sender: "Bot", text: data.answer }]);
+
+      // Store session_id from first response automatically
+      if (!sessionId && data.session_id) {
+        setSessionId(data.session_id);
+      }
+
+      setMessages((m) => [
+        ...m,
+        { sender: "Bot", text: data.answer }
+      ]);
     } catch (err) {
       setMessages((m) => [...m, { sender: "Bot", text: "Error: " + err.message }]);
     }

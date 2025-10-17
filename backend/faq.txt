@@ -1,1 +1,5 @@
-What is RAG?:RAG stands for Retrieval-Augmented Generation, which combines document retrieval with generative AI.\n
+How do I reset my password?:To reset your password, go to Settings → Account → Reset Password. You'll receive an email with a reset link. If you don't receive an email within 5 minutes, check your spam folder.
+What payment methods do you accept?:We accept major credit/debit cards (Visa, MasterCard, Amex) and UPI/NetBanking for payments in India.
+How do I track my order?:Open Orders → Select order → Track. You can also provide your order number and we will fetch the latest status.
+Can I change my shipping address after ordering?:Address changes are possible within 2 hours of placing the order. Contact support with your order ID for faster assistance.
+How do refunds work?:Refunds are processed to the original payment method within 5–7 business days after approval.
